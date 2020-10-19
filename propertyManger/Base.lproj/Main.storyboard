@@ -1,24 +1,305 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dhX-IO-MbF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Register Property View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="RegisterProperty_ViewController" customModule="propertyManger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLx-fq-6Y6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QIK-5F-cQk">
+                                        <rect key="frame" x="20" y="50" width="374" height="358"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Företagsnamn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zx-EB-moF">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Namn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ocu-mZ-gF8">
+                                                <rect key="frame" x="0.0" y="54" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R51-hw-jIS">
+                                                <rect key="frame" x="0.0" y="108" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ytu-x1-DqS">
+                                                <rect key="frame" x="0.0" y="162" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefonummer för notiser" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HeC-WG-q4T">
+                                                <rect key="frame" x="0.0" y="216" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3T-jR-Lns">
+                                                <rect key="frame" x="0.0" y="270" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-AW-YFm">
+                                                <rect key="frame" x="0.0" y="324" width="374" height="34"/>
+                                                <color key="backgroundColor" name="secondaryGreen"/>
+                                                <state key="normal" title="Registrera ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registerPropertyAndOwnerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhg-jL-OAs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v1N-D6-Ol8">
+                                        <rect key="frame" x="20" y="458" width="374" height="191"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Välkommen Namn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-wJ-sZ1">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YY-Ch-Io2">
+                                                <rect key="frame" x="0.0" y="49" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Företagsnamn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-Sd-ROf">
+                                                <rect key="frame" x="0.0" y="89.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Namn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXI-M5-L2f">
+                                                <rect key="frame" x="0.0" y="130" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefonummer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRq-Kz-zg5">
+                                                <rect key="frame" x="0.0" y="170.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="v1N-D6-Ol8" firstAttribute="top" secondItem="QIK-5F-cQk" secondAttribute="bottom" constant="50" id="EXm-c8-XIe"/>
+                                    <constraint firstAttribute="trailing" secondItem="QIK-5F-cQk" secondAttribute="trailing" constant="20" id="NQS-EE-b10"/>
+                                    <constraint firstItem="QIK-5F-cQk" firstAttribute="leading" secondItem="FLx-fq-6Y6" secondAttribute="leading" constant="20" id="V1X-eV-v2W"/>
+                                    <constraint firstItem="v1N-D6-Ol8" firstAttribute="leading" secondItem="FLx-fq-6Y6" secondAttribute="leading" constant="20" id="bPe-k8-1wh"/>
+                                    <constraint firstAttribute="trailing" secondItem="v1N-D6-Ol8" secondAttribute="trailing" constant="20" id="iea-wq-JcZ"/>
+                                    <constraint firstItem="QIK-5F-cQk" firstAttribute="top" secondItem="FLx-fq-6Y6" secondAttribute="top" constant="50" id="lky-TG-3HO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FLx-fq-6Y6" secondAttribute="bottom" id="7MJ-h0-28T"/>
+                            <constraint firstItem="FLx-fq-6Y6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KKf-zT-doL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FLx-fq-6Y6" secondAttribute="trailing" id="a1L-UE-7mL"/>
+                            <constraint firstItem="FLx-fq-6Y6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dxD-vL-pK9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S4s-hS-q1l"/>
+                    <connections>
+                        <outlet property="backgorundView" destination="FLx-fq-6Y6" id="PXl-cQ-dgX"/>
+                        <outlet property="companyName" destination="7Zx-EB-moF" id="TIH-Ar-ape"/>
+                        <outlet property="errorMessage" destination="W3T-jR-Lns" id="2pE-FB-Sr7"/>
+                        <outlet property="propertyOwnerEmail" destination="Ytu-x1-DqS" id="f9O-HM-jlJ"/>
+                        <outlet property="propertyOwnerLastName" destination="R51-hw-jIS" id="ZYl-pz-1CT"/>
+                        <outlet property="propertyOwnerName" destination="Ocu-mZ-gF8" id="qV1-hI-rCE"/>
+                        <outlet property="propertyOwnerPhonenumber" destination="HeC-WG-q4T" id="xUz-Wy-eFT"/>
+                        <segue destination="teX-Qx-J26" kind="show" identifier="registerProperty" id="ZyF-MV-7cP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2102.898550724638" y="-204.24107142857142"/>
+        </scene>
+        <!--Register Property And Tenants View Controller-->
+        <scene sceneID="5Sj-sE-9G7">
+            <objects>
+                <viewController id="teX-Qx-J26" customClass="RegisterPropertyAndTenants_ViewController" customModule="propertyManger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="661-mj-h6z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-bJ-e99">
+                                <rect key="frame" x="20" y="124" width="374" height="358"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fastighetsnamn/adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFd-vG-hkO">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kD-oi-mdc">
+                                        <rect key="frame" x="0.0" y="54" width="374" height="34"/>
+                                        <color key="backgroundColor" name="secondaryGreen"/>
+                                        <state key="normal" title="Spara fastighet">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addPropertyName:" destination="teX-Qx-J26" eventType="touchUpInside" id="AJ5-Nf-VnU"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hyresgäst namn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-bJ-aTZ">
+                                        <rect key="frame" x="0.0" y="108" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hyresgäst mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="icR-sd-TzV">
+                                        <rect key="frame" x="0.0" y="162" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hyresgäst telefon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PLY-cd-FBM">
+                                        <rect key="frame" x="0.0" y="216" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jws-O9-n3g">
+                                        <rect key="frame" x="0.0" y="270" width="374" height="34"/>
+                                        <color key="backgroundColor" name="secondaryGreen"/>
+                                        <state key="normal" title="Lägg till hyresgäst">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTa-ho-ymu">
+                                        <rect key="frame" x="0.0" y="324" width="374" height="34"/>
+                                        <color key="backgroundColor" name="secondaryGreen"/>
+                                        <state key="normal" title="Fler fastigheter +">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrera fastigheter/hyresgäster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSc-tI-XRi">
+                                <rect key="frame" x="20" y="50" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zZ8-9K-z3d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zZ8-9K-z3d" firstAttribute="trailing" secondItem="KSc-tI-XRi" secondAttribute="trailing" constant="20" id="1fx-eW-jgH"/>
+                            <constraint firstItem="KSc-tI-XRi" firstAttribute="leading" secondItem="661-mj-h6z" secondAttribute="leading" constant="20" id="2w0-pq-etb"/>
+                            <constraint firstItem="8NB-bJ-e99" firstAttribute="leading" secondItem="zZ8-9K-z3d" secondAttribute="leading" constant="20" id="CPU-yM-3ES"/>
+                            <constraint firstItem="8NB-bJ-e99" firstAttribute="top" secondItem="KSc-tI-XRi" secondAttribute="bottom" constant="50" id="Fbr-gr-Y6n"/>
+                            <constraint firstItem="zZ8-9K-z3d" firstAttribute="trailing" secondItem="8NB-bJ-e99" secondAttribute="trailing" constant="20" id="NRu-kb-gts"/>
+                            <constraint firstItem="KSc-tI-XRi" firstAttribute="top" secondItem="zZ8-9K-z3d" secondAttribute="top" constant="50" id="QPe-KD-rkY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="l7t-lf-m95"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMN-8c-SP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2852" y="-204"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nho-zY-wXs">
+            <objects>
+                <viewController id="TST-JK-uiY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ycs-41-a4f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uxv-GY-Gm4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fDj-ys-jV2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYw-qM-UOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3551" y="-204"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="3bo-GY-o0v">
+            <objects>
+                <viewController id="dhX-IO-MbF" customClass="Home_ViewController" customModule="propertyManger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bFu-g9-jpw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fastighetshanteraren" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSp-c7-dxe">
+                                <rect key="frame" x="20" y="94" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8i-Ug-vgs">
+                                <rect key="frame" x="20" y="427.5" width="374" height="41"/>
+                                <color key="backgroundColor" name="secondaryGreen"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Registrera Företag">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hQA-Ih-mhF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijV-eu-yFb">
+                                <rect key="frame" x="20" y="173" width="374" height="163"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Den perfekta appen för dig som har en eller flera hyresgäster och vill kunna sköta all administration via en enkel och intutiv applikation</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yp1-Sp-Edt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tSp-c7-dxe" firstAttribute="leading" secondItem="yp1-Sp-Edt" secondAttribute="leading" constant="20" id="2xf-YP-Ioz"/>
+                            <constraint firstItem="U8i-Ug-vgs" firstAttribute="centerY" secondItem="bFu-g9-jpw" secondAttribute="centerY" id="3BW-bg-FKb"/>
+                            <constraint firstItem="yp1-Sp-Edt" firstAttribute="trailing" secondItem="tSp-c7-dxe" secondAttribute="trailing" constant="20" id="3W8-9j-2bR"/>
+                            <constraint firstItem="U8i-Ug-vgs" firstAttribute="centerX" secondItem="bFu-g9-jpw" secondAttribute="centerX" id="5lK-kB-nfL"/>
+                            <constraint firstItem="U8i-Ug-vgs" firstAttribute="leading" secondItem="yp1-Sp-Edt" secondAttribute="leading" constant="20" id="Dkz-df-azO"/>
+                            <constraint firstItem="U8i-Ug-vgs" firstAttribute="top" secondItem="ijV-eu-yFb" secondAttribute="bottom" constant="91.5" id="Fbv-bQ-bSi"/>
+                            <constraint firstItem="ijV-eu-yFb" firstAttribute="top" secondItem="tSp-c7-dxe" secondAttribute="bottom" constant="50" id="Fnd-IK-ZQN"/>
+                            <constraint firstItem="ijV-eu-yFb" firstAttribute="leading" secondItem="yp1-Sp-Edt" secondAttribute="leading" constant="20" id="WyS-iT-6UM"/>
+                            <constraint firstItem="yp1-Sp-Edt" firstAttribute="trailing" secondItem="U8i-Ug-vgs" secondAttribute="trailing" constant="20" id="YwO-k3-AfE"/>
+                            <constraint firstItem="yp1-Sp-Edt" firstAttribute="trailing" secondItem="ijV-eu-yFb" secondAttribute="trailing" constant="20" id="vZU-Fj-GbQ"/>
+                            <constraint firstItem="tSp-c7-dxe" firstAttribute="top" secondItem="yp1-Sp-Edt" secondAttribute="top" constant="50" id="vfa-m2-iew"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJ6-yH-HmK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1362.3188405797102" y="-204.24107142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="secondaryGreen">
+            <color red="0.29803921568627451" green="0.60392156862745094" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
