@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         ref = Database.database().reference()
         
-       
+
     }
 
 

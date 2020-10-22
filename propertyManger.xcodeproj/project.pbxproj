@@ -18,6 +18,9 @@
 		D19B13BA2535E05C00BBD973 /* Home-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B13B92535E05C00BBD973 /* Home-ViewController.swift */; };
 		D19B13BE2536F8A400BBD973 /* RegisterProperty-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B13BD2536F8A400BBD973 /* RegisterProperty-ViewController.swift */; };
 		D19B14002539C71200BBD973 /* RegisterPropertyAndTenants-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B13FF2539C71200BBD973 /* RegisterPropertyAndTenants-ViewController.swift */; };
+		D1DDE8ED253F0C02002D0FF3 /* PropertyName-TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDE8EC253F0C02002D0FF3 /* PropertyName-TableViewCell.swift */; };
+		D1DDE9132540A6BE002D0FF3 /* RegisterTenants-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDE9122540A6BD002D0FF3 /* RegisterTenants-ViewController.swift */; };
+		D1DDE91A2540BE37002D0FF3 /* Tanants-TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DDE9192540BE37002D0FF3 /* Tanants-TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		D19B13B92535E05C00BBD973 /* Home-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home-ViewController.swift"; sourceTree = "<group>"; };
 		D19B13BD2536F8A400BBD973 /* RegisterProperty-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterProperty-ViewController.swift"; sourceTree = "<group>"; };
 		D19B13FF2539C71200BBD973 /* RegisterPropertyAndTenants-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterPropertyAndTenants-ViewController.swift"; sourceTree = "<group>"; };
+		D1DDE8EC253F0C02002D0FF3 /* PropertyName-TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropertyName-TableViewCell.swift"; sourceTree = "<group>"; };
+		D1DDE9122540A6BD002D0FF3 /* RegisterTenants-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterTenants-ViewController.swift"; sourceTree = "<group>"; };
+		D1DDE9192540BE37002D0FF3 /* Tanants-TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tanants-TableViewCell.swift"; sourceTree = "<group>"; };
 		F9CF29C85BCEBFCF05E0A19F /* Pods-propertyManger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-propertyManger.debug.xcconfig"; path = "Target Support Files/Pods-propertyManger/Pods-propertyManger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,12 +98,15 @@
 				D19B138B25359B4C00BBD973 /* SceneDelegate.swift */,
 				D19B138D25359B4C00BBD973 /* ViewController.swift */,
 				D19B138F25359B4C00BBD973 /* Main.storyboard */,
+				D1DDE9192540BE37002D0FF3 /* Tanants-TableViewCell.swift */,
+				D1DDE9122540A6BD002D0FF3 /* RegisterTenants-ViewController.swift */,
 				D19B13BD2536F8A400BBD973 /* RegisterProperty-ViewController.swift */,
 				D19B13B92535E05C00BBD973 /* Home-ViewController.swift */,
 				D19B139225359B4E00BBD973 /* Assets.xcassets */,
 				D19B139425359B4E00BBD973 /* LaunchScreen.storyboard */,
 				D19B139725359B4E00BBD973 /* Info.plist */,
 				D19B13FF2539C71200BBD973 /* RegisterPropertyAndTenants-ViewController.swift */,
+				D1DDE8EC253F0C02002D0FF3 /* PropertyName-TableViewCell.swift */,
 				D19B139E25359CC400BBD973 /* GoogleService-Info.plist */,
 			);
 			path = propertyManger;
@@ -114,7 +123,7 @@
 				D19B138225359B4C00BBD973 /* Sources */,
 				D19B138325359B4C00BBD973 /* Frameworks */,
 				D19B138425359B4C00BBD973 /* Resources */,
-				45DAD10D665509CD23F622DC /* [CP] Embed Pods Frameworks */,
+				C20C4940CD768C08617BDB98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,7 +181,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45DAD10D665509CD23F622DC /* [CP] Embed Pods Frameworks */ = {
+		C20C4940CD768C08617BDB98 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,6 +231,9 @@
 				D19B13BA2535E05C00BBD973 /* Home-ViewController.swift in Sources */,
 				D19B14002539C71200BBD973 /* RegisterPropertyAndTenants-ViewController.swift in Sources */,
 				D19B13BE2536F8A400BBD973 /* RegisterProperty-ViewController.swift in Sources */,
+				D1DDE8ED253F0C02002D0FF3 /* PropertyName-TableViewCell.swift in Sources */,
+				D1DDE9132540A6BE002D0FF3 /* RegisterTenants-ViewController.swift in Sources */,
+				D1DDE91A2540BE37002D0FF3 /* Tanants-TableViewCell.swift in Sources */,
 				D19B138A25359B4C00BBD973 /* AppDelegate.swift in Sources */,
 				D19B138C25359B4C00BBD973 /* SceneDelegate.swift in Sources */,
 			);
